@@ -1,0 +1,100 @@
+body, html, .content{
+    min-height: max-content;
+}
+.lm {
+    text-decoration: none;
+    color: antiquewhite;
+}
+.right_work {
+    float: left;
+    width: 85%;
+    height: max-content;
+    margin: 0 10px 10px 10px;
+    }
+.comp {
+    float: left;
+    width: 48%;
+    height: 90%;
+    margin: 5px;
+}
+.exp {
+    float: right;
+    width: 48%;
+    height: inherit;
+    margin: 5px;
+}
+#line {
+    float: left;
+    width: 1%;
+    height: 1800px;
+    }
+.tb {
+    border-spacing: 10px;
+    width: 95%;
+    margin: 5px;
+    height: max-content;
+    }
+#st1 {
+    text-align: center;
+    font-style: normal;
+    font-size: 14px;
+    font-family: "Bookman Old Style", sans-serif;
+    font-weight: bold;
+    background-color: #2D2B34;
+    height: 50px;
+    color: antiquewhite;
+}
+.cl1, .cl2 {
+    width: 25%;
+    font-size: 16px;
+}
+.cl3 {
+    width: 50%;
+    text-align: justify;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.pos {
+    font-family: "Bookman Old Style", sans-serif;
+    font-size: 16px;
+    padding: 10px;
+}
+span {
+    font-weight: bold;
+}
+.tx {
+    padding: 1px;
+    margin: 1px;
+}
+#ln {
+    height: 100%;
+    border-color: black;
+    border-style: solid;
+    margin: 5px;
+    animation-name: colorful;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorful {
+    0% {
+        background-color: #72746C;
+    }
+    50% {
+        background-color: #2D2B34;
+            }
+    100% {
+        background-color: black;
+    }
+
+}
+.foot{
+    background-color: black;
+    color: antiquewhite;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -50px;
+
+  }

@@ -1,0 +1,89 @@
+.rm {
+float: left;
+width: 85%;
+height: max-content;
+
+}
+#me {
+
+}
+.me {
+  font-style: normal;
+    font-size: 14px;
+    font-family: "Bookman Old Style", sans-serif;
+    text-align: justify;
+    border-spacing: 2px;
+    width: 100%;
+    margin: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #2D2B34;
+
+}
+.me1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #2D2B34;
+    color: antiquewhite;
+    height: 20px;
+
+}
+.me2, .me3, .me4, .me5 {
+    text-align: justify;
+    font-size: 14px;
+    font-family: "Bookman Old Style", sans-serif;
+    padding: 2px;
+}
+.me2 {
+    width: 8%;
+}
+.me3 {
+    width: 35%;
+}
+.me4 {
+    width: 35%;
+}
+.me5 {
+    width: 20%;
+}
+hr {
+    width: 100%;
+    height: 10px;
+    background-color: #2D2B34;
+}
+.ep {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#s, #e {
+    color: black;
+    padding-left: 10px;
+}
+#i, #f {
+    color: antiquewhite;
+    padding-left: 10px;
+}
+.scale {
+  color: #2D2B34;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Bookman Old Style", sans-serif;
+}
+.pm {
+    width: 48%;
+    float: left;
+    height: max-content;
+}
+.program {
+    width: 48%;
+    float: right;
+    height: max-content;
+   }
+.nt {
+    width: 48%;
+    float: right;
+    height: max-content;
+}
+
