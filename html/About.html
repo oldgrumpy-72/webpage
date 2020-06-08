@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>About me</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
     <style>
         .lm {
             color: antiquewhite;
@@ -11,29 +12,30 @@
         }
     </style>
 
+
 </head>
 <body>
 <div class="content">
 <header>
     <h1>Обо мне</h1>
 </header>
-<div class="left_menu">
+<div class="left_menu" id="left_menu">
     <p><img src="../img/Я.png" class="circle1" alt="мое фото"></p>
-<ul>
-    <li> География </li>
-    <li> Учеба </li>
-    <li> Работа </li>
-    <li> Семья </li>
+<ul id="ul1" name="ul1">
+    <li><a class="per" href="#geo"> География </a></li>
+    <li><a class="per" href="#study"> Учеба </a></li>
+    <li> <a class="per" href="#work" > Работа </a></li>
+    <li> <a class="per" href="#family" > Семья </a> </li>
     <li><a href="../index.html" class="lm"> Вернуться на главную </a> </li>
 </ul>
 </div>
 
 <div class = "right_about">
+    <h2  id="geo" class="text"> География </h2>
     <table>
-    <tr class = "tab_about">
-        <td style="width: 100px; height: 60px">
-            <h2 class="text"> География </h2>
-            <p><img src="../img/Карта.jpg" alt="Карта России"  class="circle"></p>
+        <tr class = "tab_about">
+        <td style="width: 10%; height: max-content">
+            <img src="../img/Карта.jpg" alt="Карта России"  class="circle">
         </td>
         <td>
         <p id="pt" class="desk"> Родился в Москве. Живу в ближнем Подмосковье (Люберцы, скорее даже Жулебино). Работаю в Москве.
@@ -41,11 +43,12 @@
         Честно говоря, Казань с точки зрения жизни нравится даже больше чем Москва. </p>
         </td>
     </tr>
+    </table>
+    <h2 id = "study" class="text"> Учеба </h2>
+    <table>
         <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-
-                <h2 class="text"> Учеба </h2>
-                <p><img src="../img/Студент.png" alt="Студент"  class="circle"></p>
+            <td style="width: 10%; height: max-content">
+                   <img src="../img/Студент.png" alt="Студент"  class="circle">
             </td>
             <td>
                 <p class="desk"> Все как у многих. Средняя школа еще в советские времена. За оценками не гнался, но закончил хорошо, средний балл – 4,5.
@@ -59,10 +62,12 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <h2 id = "work" class="text"> Работа </h2>
+    <table>
         <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-                <h2 class="text"> Работа </h2>
-                <p><img src="../img/worker.jpg" alt="Работа"  class="circle"></p>
+            <td style="width: 10%; height: max-content">
+                <img src="../img/worker.jpg" alt="Работа"  class="circle">
             </td>
             <td>
                 <p class="desk"> Недавно задумался. Если не считать службу в армии я уже работаю 21 год.
@@ -74,13 +79,16 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <h2 id="family" class="text"> Семья </h2>
+    <table>
         <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-                <h2 class="text"> Семья </h2>
-                <p><img src="../img/Семья.jpg" alt="Работа"  class="circle"></p>
+            <td style="width: 10%; height: max-content">
+
+             <img src="../img/Семья.jpg" alt="Работа"  class="circle">
             </td>
             <td>
-                <p class="desk" id="pb"> Семья это святое. Красавица жена, двое мальчишек. Хотя какие они уже мальчишки. Один уже работает, второй окончил школу и готовится к поступлению в институт.
+                <p class="desk"> Семья это святое. Красавица жена, двое мальчишек. Хотя какие они уже мальчишки. Один уже работает, второй окончил школу и готовится к поступлению в институт.
                     Но, несмотря на это они все равно для меня мои мальчики.  Квартира, дача.  Большое желание, наконец, то заработать достаточное количество денег и переехать в собственный дом за городом, на природу.
                     Пока не получается, то неудачные вложения в бизнес, то помогаю родителям (это тоже святое), то надо подымать сыновей. Но все-таки стремлюсь к тому, чтобы эта мечта о собственном доме исполнилась,
                     и тогда можно будет  мечтать о чем-нибудь другом.
@@ -90,9 +98,7 @@
     </table>
 </div>
 </div>
-<footer class="footer">
-    <p id = "foot"> Разработка и дизайн: Роман Полетаев   Москва    2020 год</p>
-</footer>
+<div class="foot" > Разработка и дизайн: Роман Полетаев   Москва    2020 год </div>
 
 </body>
 </html>

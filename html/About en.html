@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>About me</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
     <style>
         .lm {
             color: antiquewhite;
@@ -16,23 +17,23 @@
 <header>
     <h1> About me </h1>
 </header>
-<div class="left_menu">
-    <p></p><img src="../img/Я.png" alt="мое фото" class="circle1"></p>
-<ul>
-    <li> Geography </li>
-    <li> Study </li>
-    <li> Work </li>
-    <li> Family </li>
+<div class="left_menu" id="left_menu">
+    <p><img src="../img/Я.png" alt="мое фото" class="circle1"></p>
+<ul id="ul1">
+    <li> <a class="per" href="#geo"> Geography </a></li>
+    <li> <a class="per" href="#study"> Study </a> </li>
+    <li> <a class="per" href="#work"> Work </a> </li>
+    <li> <a class="per" href="#family"> Family </a></li>
     <li><a href="main_en.html" class="lm"> Back to main page </a></li>
 </ul>
 </div>
 
 <div class = "right_about">
+    <h2 id="geo" class="text"> Geography </h2>
     <table>
     <tr class = "tab_about">
         <td style="width: 100px; height: 60px">
-            <h2 class="text"> Geography </h2>
-            <p><img src="../img/Карта.jpg" alt="Карта России"  class="circle"></p>
+            <img src="../img/Карта.jpg" alt="Карта России"  class="circle">
         </td>
         <td>
         <p class="desk" id="pt1"> Was born in Moscow. I live in the near Moscow region (Lyubertsy, rather even Zhulebino). work in Moscow.
@@ -40,11 +41,12 @@
             To be honest, I like Kazan from the point of view of life even more than Moscow. </p>
         </td>
     </tr>
+    </table>
+    <h2 class="text" id="study"> Study </h2>
+    <table>
         <tr class = "tab_about">
             <td style="width: 100px; height: 60px">
-
-                <h2 class="text"> Study </h2>
-                <p><img src="../img/Студент.png" alt="Студент"  class="circle"></p>
+               <img src="../img/Студент.png" alt="Студент"  class="circle">
             </td>
             <td>
                 <p class="desk"> All as many. High school in Soviet times. I didn't pursue my grades, but I finished well, with an average score of 4.5.
@@ -58,10 +60,12 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <h2 class="text" id="work"> Work </h2>
+    <table>
         <tr class = "tab_about">
             <td style="width: 100px; height: 60px">
-                <h2 class="text"> Work </h2>
-                <p><img src="../img/worker.jpg" alt="Работа"  class="circle"></p>
+                <img src="../img/worker.jpg" alt="Работа"  class="circle">
             </td>
             <td>
                 <p class="desk" > I've been thinking about it recently. If you don't count my military service, I've already been working for 21 years.
@@ -73,13 +77,15 @@
                 </p>
             </td>
         </tr>
+    </table>
+    <h2 class="text" id="family"> Family </h2>
+    <table>
         <tr class = "tab_about">
             <td style="width: 100px; height: 60px">
-                <h2 class="text"> Family </h2>
-                <p><img src="../img/Семья.jpg" alt="Работа"  class="circle"></p>
+                <img src="../img/Семья.jpg" alt="Работа"  class="circle">
             </td>
             <td>
-                <p class="desk" id="pb1"> The family is sacred. Beautiful wife, two boys. Although they are already boys. One is already working, the other has finished school and is preparing to enter the Institute.
+                <p class="desk"> The family is sacred. Beautiful wife, two boys. Although they are already boys. One is already working, the other has finished school and is preparing to enter the Institute.
                     But, despite this, they are still my boys for me. Apartment, cottage. A great desire to finally earn enough money and move to your own house in the country, in nature.
                     Until it turns out, then unsuccessful investments in business, then I help my parents (this is also sacred), then I need to raise my sons. But I still strive to make this dream of my own home come true,
                     and then you can dream of something else.
@@ -89,9 +95,7 @@
     </table>
 </div>
 </div>
-<footer class="footer">
-    <p id = "foot"> Development and design: Roman Poletaev Moscow 2020 </p>
-</footer>
+<div class="foot" > Development and design: Roman Poletaev Moscow 2020 </div>
 
 </body>
 </html>
