@@ -1,0 +1,29 @@
+.right {
+    display: none;
+}
+header {
+    height: 60px;
+}
+.left_menu {
+margin: 10% 6% 10% 6%;
+    width: 84%;
+    height: 85%;
+}
+.menu1 {
+    width: 95%;
+    height: 80%;
+    }
+.p1 {
+   margin: 40px;
+    width: 95%;
+    height: 10%;
+
+}
+.men {
+    margin: 30px;
+    width: 90%;
+    height: 90%;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
