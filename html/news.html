@@ -4,17 +4,54 @@
     <meta charset="UTF-8">
     <title>News</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
+    <style>
+        .dt {
+            margin: 10px 10px 10px 30px;
+            font-family: "Bookman Old Style", sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        @media only screen and (max-device-width: 640px) {
+            #left_menu {
+                height: 80px;
+                margin: 20px;
+                width: 92%;
+            }
+            .dt {
+                font-size: 25px;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
-<div class="content" style="background-image: url(../img/Picture-under-construction-11.jpg)">
+<div class="content">
 <header>
-    <h1>СКОРО ЗДЕСЬ ПОЯВЯТСЯ НОВОСТИ и МОИ КОММЕНТАРИИ</h1>
+    <h1> Понемногу обо всем </h1>
 </header>
-<div class="left_menu">
-    <ul>
+<div class="left_menu" id="left_menu">
+    <ul id="ul2">
         <li><a style="text-decoration: none; color: antiquewhite" href="../index.html" class="lm"> Вернуться на главную </a> </li>
     </ul>
 </div>
+    <div class="news">
+        <h2 style="text-align: center; text-transform: uppercase"> Новости и комментарии</h2>
+        <div class="dt">
+            <p> 11.06.2020 года </p>
+            <p> Закончил разработку сайта. Не так сложна сама разработка. Но я к сожалению не дизайнер и вот само продумывание концепции заняло достаточно времени </p>
+        </div>
+        <div class="dt">
+            <p> 11.06.2020 года </p>
+            <p> Закончился период самоизоляции. Уже хорошо. Вчера наконец-то получил документы об увольнении. Ждал с 6 апреля.
+            Начинается новый этап жизни. Пора заняться чем-то новым, узнать что-то новое. Новые проекты. Новые знания. В общем перехожу
+            в режим активного поиска новой работы. Не могу сказать что потратил время проведенное дома бесполезно. Много нового изучил, так
+            как наконец-то появилось достаточно много свободного времени на изучение тех дисциплин в которых явно не хватало опыта и знаний.
+            Но сидеть дома реально надоело. Не тот я человек</p>
+        </div>
+    </div>
 </div>
 </body>
+<div class="foot" > Разработка и дизайн: Роман Полетаев   Москва    2020 год </div>
 </html>
