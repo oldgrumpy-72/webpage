@@ -6,6 +6,56 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/work.css">
     <link rel="stylesheet" href="../css/sert.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
+    <style>
+        h2 {
+            padding: 10px;
+            text-align: center;
+        }
+        h4 {
+            padding: 10px;
+            text-align: justify;
+                    }
+        h3 {
+            padding:5px;
+        }
+        @media only screen and (max-device-width: 640px) {
+            #per1, #per2, #per3 {
+                padding: 0 0 0 10%;
+            }
+            #left_menu {
+                height: 170px;
+                margin: 20px;
+                width: 92%;
+            }
+        #ul2 {
+            margin: 30px;
+        }
+        .rm {
+            width: 100%;
+        }
+        #me {
+            width: 97%;
+            margin: 10px;
+
+        }
+        .me, .me2, .me3, .me4, .me5 {
+            font-size: 20px;
+        }
+        p {
+            padding: 10px;
+        }
+        .pm, .nt, .program {
+            width: 97%;
+            padding: 10px;
+        }
+        h3 {
+            font-size: 25px;
+            padding: 10px;
+        }
+
+        }
+    </style>
 </head>
 <body>
 <div class="content">
@@ -13,16 +63,16 @@
         <h1> Навыки и знания </h1>
     </header>
 
-    <div class="left_menu">
-        <ul>
-            <li> Основное обучение </li>
-            <li> Дополнительные курсы и сертификаты </li>
-            <li><a href="../index.html" class="lm"> Вернуться на главную </a> </li>
+    <div class="left_menu" id="left_menu">
+        <ul id="ul2">
+            <li> <a class="per" id="per1" href="#me"> Основное обучение </a> </li>
+            <li> <a class="per" id="per2" href="#de"> Дополнительные курсы и сертификаты </a></li>
+            <li><a id="per3" href="../index.html" class="lm"> Вернуться на главную </a> </li>
         </ul>
     </div>
     <div class="rm">
         <div name = "main_ed" id="me">
-            <h2 style="padding: 5px; text-align: center"> Основное образование </h2>
+            <h2> Основное образование </h2>
             <table class = "me">
                 <tr>
                     <td class="me1" style="width: 8%"> Год </td> <td class="me1" style="width: 35%"> Учебное заведение </td>
@@ -73,15 +123,15 @@
             </table>
             <hr/>
         </div>
-        <div name="dop_ed" class="de">
-            <h2 style="padding: 5px; text-align: center"> Повышение квалификации и курсы </h2>
-            <h4 style="padding: 5px; text-align: justify"> Когда понимаешь что не хватает знаний - лучше всего подобрать необходимые курсы
+        <div name="dop_ed" class="de" id="de">
+            <h2> Повышение квалификации и курсы </h2>
+            <h4> Когда понимаешь что не хватает знаний - лучше всего подобрать необходимые курсы
                 и главное - использовать полученные знания на практике. </h4>
             <p> Мне больше всего нравятся следующие образовательные платформы: <a class = "ep" id = "s" href="https://stepik.org/"> STEPIK </a>
                 <a class = "ep"  id = "i" href="https://www.intuit.ru/"> ИНТУИТ </a> <a class = "ep" id = "e" href="https://www.edx.org/"> EDX </a>
                 <a class = "ep" id = "f" href="https://www.freecodecamp.org/"> FreeCodeCamp </a> </p>
             <div class="pm">
-            <h3 style="padding:5px"> 1. Повышение квалификации в области менеджмента и управления проектами </h3>
+            <h3 > 1. Повышение квалификации в области менеджмента и управления проектами </h3>
             <table class="me">
                 <tr >
                     <td style="text-align: center; font-weight: bold; background-color: #2D2B34; color: antiquewhite"> НАЗВАНИЕ КУРСА </td>
