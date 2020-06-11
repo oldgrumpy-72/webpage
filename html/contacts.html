@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Мои контакты</title>
      <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
     <style>
 body {
     font-family: "Bookman Old Style", sans-serif;
@@ -27,6 +28,28 @@ body {
         #scp {
             margin-top: 20%;
         }
+@media only screen and (max-device-width: 640px) {
+    #left_menu {
+        height: 100px;
+        margin: 20px;
+        width: 92%;
+    }
+    #ul2 {
+        margin: 20px;
+        width: 92%;
+        list-style: none;
+    }
+    #form {
+        width: 97%;
+    }
+    #btn {
+        width: 100%;
+    }
+    #scp {
+        width: 97%;
+    }
+
+    }
 
     </style>
 </head>
@@ -35,8 +58,8 @@ body {
     <header>
         <h1>Мои контакты</h1>
     </header>
-    <div class="left_menu">
-        <ul>
+    <div class="left_menu" id="left_menu">
+        <ul id="ul2">
             <li><a style="text-decoration: none; color: antiquewhite" href="../index.html" class="lm"> Вернуться на главную </a> </li>
         </ul>
     </div>
