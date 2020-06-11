@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Мои увлечения </title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
 
     <style>
         h2 {
@@ -42,9 +43,7 @@
             margin: 0;
 
         }
-        #RM {
-            float: right;
-                    }
+
         .ft {
             width: 20%;
             margin: 40px 0 0 0;
@@ -77,6 +76,38 @@
         .big {
             font-weight: bold;
         }
+        @media only screen and (max-device-width: 640px) {
+            #RM, #LM {
+                float: none;
+                width: 96%;
+            }
+            #left_menu {
+                height: 200px;
+                margin: 20px;
+                width: 92%;
+            }
+            #ul2 {
+                margin: 20px;
+                width: 92%;
+                list-style: none;
+            }
+            #LM {
+                height:1520px;
+                margin: 250px 20px 20px 20px;
+            }
+            .rtx {
+                margin: 20px;
+                width: 92%;
+                font-size: small;
+            }
+            #RM {
+                height:1800px;
+                margin: 20px;
+            }
+            #per1, #per2, #per3 {
+                padding: 0 0 0 30%;
+            }
+        }
     </style>
     <link rel="stylesheet" href="../css/work.css">
 </head>
@@ -85,16 +116,16 @@
 <header>
     <h1> My hobby </h1>
 </header>
-<div class="left_menu">
-    <ul>
-        <li> Last </li>
-        <li> Present </li>
-        <li><a href="main_en.html" class="lm"> Back to main page </a> </li>
+<div class="left_menu" id="left_menu">
+    <ul id="ul2">
+        <li> <a id="per1" class="per" href="#last"> Last </a></li>
+        <li> <a id="per2" class="per" href="#now"> Present </a> </li>
+        <li><a id = "per3" href="main_en.html" class="lm"> Back to main page </a> </li>
     </ul>
 </div>
 <div id = "LM">
     <div class="hobby">
-        <h2> Childhood Hobbies </h2>
+        <h2 id="last"> Childhood Hobbies </h2>
 
         <p class="zag"> Stamps </p>
 
@@ -140,7 +171,7 @@
 </div>
 <div id = "RM">
     <div class="hobby">
-        <h2> What now? </h2>
+        <h2 id="now"> What now? </h2>
         <p class="rtx">
             All the passions of childhood are gone. <span class="big">Stamps</span> in blassers and albums are stacked on the mezzanine. There are also boxes with <span class= "big" > icons</span>.
 Of the children's Hobbies, only <span class="big"> sports </span> in the form of home training on simulators and <span class="big"> love of exact science and history</span>remained.

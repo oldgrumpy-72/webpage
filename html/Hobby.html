@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Мои увлечения </title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
     <style>
         h2 {
             text-align: center;
@@ -35,7 +36,7 @@
         #LM, #RM {
             float: left;
             width: 42%;
-            min-height: 700px;
+            height: 700px;
             border-radius: 7%;
             border-color: #2D2B34;
             margin: 0;
@@ -76,6 +77,38 @@
         .big {
             font-weight: bold;
         }
+        @media only screen and (max-device-width: 640px) {
+            #RM, #LM {
+                float: none;
+                width: 96%;
+            }
+            #left_menu {
+                height: 200px;
+                margin: 20px;
+                width: 92%;
+            }
+            #ul2 {
+                margin: 20px;
+                width: 92%;
+                list-style: none;
+            }
+            #LM {
+                height:1700px;
+                margin: 250px 20px 20px 20px;
+            }
+            .rtx {
+                margin: 20px;
+                width: 92%;
+                font-size: small;
+            }
+            #RM {
+                height:1700px;
+                margin: 20px;
+            }
+            #per1, #per2, #per3 {
+                padding: 0 0 0 30%;
+            }
+        }
     </style>
     <link rel="stylesheet" href="../css/work.css">
 </head>
@@ -84,16 +117,16 @@
 <header>
     <h1> Мои увлечения </h1>
 </header>
-<div class="left_menu">
-    <ul>
-        <li> Прошлые </li>
-        <li> Нынешние </li>
-        <li><a href="../index.html" class="lm"> Вернуться на главную </a> </li>
+<div class="left_menu" id="left_menu">
+    <ul id="ul2">
+        <li> <a id="per1" class="per" href="#last"> Прошлые </a> </li>
+        <li> <a id = "per2" class="per" href="#now"> Нынешние </a></li>
+        <li><a id = "per3" href="../index.html" class="lm"> Вернуться на главную </a> </li>
     </ul>
 </div>
 <div id = "LM">
-    <div class="hobby">
-        <h2> Увлечения детства </h2>
+    <div  class="hobby">
+        <h2 id="last"> Увлечения детства </h2>
 
         <p class="zag"> Марки </p>
 
@@ -139,7 +172,7 @@
 </div>
 <div id = "RM">
     <div class="hobby">
-        <h2> А что сейчас? </h2>
+        <h2 id = "now"> А что сейчас? </h2>
         <p class="rtx">Все увлечения детства прошли. <span class="big">Марки</span> в кляссерах и альбомах сложены на антресолях. Там же и коробки со <span class="big">значками</span>.
             Из детских увлечений остались только <span class="big"> спорт </span> в виде домашних занятий на тренажерах и <span class="big"> любовь к точным наукам и истории</span>.
             Было еще увлечение <span class="big">фотографией</span> – даже в свое время (когда было сложно купить хороший увеличитель) собрал его своими руками.
