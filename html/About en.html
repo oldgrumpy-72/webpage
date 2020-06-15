@@ -10,6 +10,75 @@
             color: antiquewhite;
             text-decoration: none;
         }
+        .main {
+            display: flex;
+            flex-direction: row;
+        }
+        .left_menu {
+            width: 15%;
+        }
+        .right_about {
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+        }
+        .tab {
+            display: grid;
+            grid-template-columns: 15% 85%;
+        }
+
+        .d1 {
+            background-image: url("../img/Карта.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+        }
+        .d1_1 {
+            background-image: url("../img/student.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+        }
+        .d1_2 {
+            background-image: url("../img/worker.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+        }
+        .d1_3 {
+            background-image: url("../img/Семья.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+        }
+        .desk {
+            padding: 0;
+        }
+        @media only screen and (max-device-width: 640px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                margin: 20px;
+               }
+            .right_about {
+                width: 99%;
+            }
+            .left_menu {
+                width: 90%;
+                margin: 3%;
+            }
+            .desk {
+                font-size: 24px;
+            }
+
+        }
+
+
     </style>
 </head>
 <body>
@@ -17,6 +86,7 @@
 <header>
     <h1> About me </h1>
 </header>
+    <div class="main">
 <div class="left_menu" id="left_menu">
     <p><img src="../img/Я.png" alt="мое фото" class="circle1"></p>
 <ul id="ul1">
@@ -30,25 +100,24 @@
 
 <div class = "right_about">
     <h2 id="geo" class="text"> Geography </h2>
-    <table>
-    <tr class = "tab_about">
-        <td style="width: 100px; height: 60px">
-            <img src="../img/Карта.jpg" alt="Карта России"  class="circle">
-        </td>
-        <td>
+    <div class="tab">
+    <div class = "d1">
+
+    </div>
+        <div class="d2">
         <p class="desk" id="pt1"> Was born in Moscow. I live in the near Moscow region (Lyubertsy, rather even Zhulebino). work in Moscow.
             Have a good attitude about moving. Worked in Tatarstan for five years (managed a large project).
             To be honest, I like Kazan from the point of view of life even more than Moscow. </p>
-        </td>
-    </tr>
-    </table>
+        </div>
+    </div>
+
     <h2 class="text" id="study"> Study </h2>
-    <table>
-        <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-               <img src="../img/Студент.png" alt="Студент"  class="circle">
-            </td>
-            <td>
+    <div class="tab">
+        <div class = "d1_1">
+
+
+            </div>
+            <div class = "d2">
                 <p class="desk"> All as many. High school in Soviet times. I didn't pursue my grades, but I finished well, with an average score of 4.5.
                     In parallel, he graduated from the physics and mathematics school at one of the leading Universities. After school, he entered the military school of communications, which he graduated with honors.
                     This gave him basic technical knowledge in the field of telecommunications and it, which he later developed. Then the service, while serving, he graduated from the law Institute with a degree in Civil law.
@@ -58,16 +127,13 @@
                     MBA? Here I agree with one of my teachers in the MBA-the diploma does not give anything, the same disciplines can be taken independently in separate courses. The main skill is to apply the acquired knowledge.
                     After these words, I began to choose my own courses and simply improve my skills in those issues in which I did not have enough knowledge.
                 </p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
     <h2 class="text" id="work"> Work </h2>
-    <table>
-        <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-                <img src="../img/worker.jpg" alt="Работа"  class="circle">
-            </td>
-            <td>
+    <div class="tab">
+        <div class = "d1_2">
+              </div>
+            <div class = "d2">
                 <p class="desk" > I've been thinking about it recently. If you don't count my military service, I've already been working for 21 years.
                     During this time, I was a leading specialist in project management, sales Manager, Director of the product Department,
                     Director of business development, commercial Director, General Director of both the company and the group of companies. Like everyone else, there were UPS and downs.
@@ -75,26 +141,27 @@
                     Even though probably like everyone else, not all projects were successful, but all of them were interesting in one way or another.
                     And now all I do is interesting new directions and projects. In any case, both past and existing projects have taught me a lot.
                 </p>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+
     <h2 class="text" id="family"> Family </h2>
-    <table>
-        <tr class = "tab_about">
-            <td style="width: 100px; height: 60px">
-                <img src="../img/Семья.jpg" alt="Работа"  class="circle">
-            </td>
-            <td>
+    <div class="tab">
+        <div class="d1_3">
+
+            </div>
+            <div class="d2">
                 <p class="desk"> The family is sacred. Beautiful wife, two boys. Although they are already boys. One is already working, the other has finished school and is preparing to enter the Institute.
                     But, despite this, they are still my boys for me. Apartment, cottage. A great desire to finally earn enough money and move to your own house in the country, in nature.
                     Until it turns out, then unsuccessful investments in business, then I help my parents (this is also sacred), then I need to raise my sons. But I still strive to make this dream of my own home come true,
                     and then you can dream of something else.
                 </p>
-            </td>
-        </tr>
-    </table>
+            </div>
+
+        </div>
+    </div>
 </div>
 </div>
+
 <div class="foot" > Development and design: Roman Poletaev Moscow 2020 </div>
 
 </body>
