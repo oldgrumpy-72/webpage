@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Мои увлечения </title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="only screen and (max-device-width: 640px)">
+    <style>
+        h2 {
+            text-align: center;
+            font-family: "Bookman Old Style", sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        .zag {
+            width: 100%;
+            text-align: center;
+            font-family: "Bookman Old Style", sans-serif;
+            font-style: normal;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 10px 0 0 10px;
+            margin: 0;
+            float: left;
+            font-weight: bold;
+            height: 20px;
+        }
+        #zg1, #zg2 {
+            float: right;
+        }
+        .lm {
+            color: antiquewhite;
+            text-decoration: none;
+            margin: 0;
+        }
+        #LM, #RM {
+            float: left;
+            width: 42%;
+            height: max-content;
+            border-radius: 7%;
+            border-color: #2D2B34;
+            margin: 0;
+
+        }
+        #RM {
+            float: right;
+                    }
+        .foto {
+            width: 20%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        #foto1 {
+            background-image: url("../img/stamp.jpg");
+        }
+        #foto2 {
+            background-image: url("../img/Значки.jpg");
+        }
+        #foto3 {
+            background-image: url("../img/History.jpg");
+        }
+        #foto4 {
+            background-image: url("../img/Спорт.jpg");
+        }
+        .txtH {
+            width: 80%;
+            margin: 10px;
+            border-radius: 6%;
+            float: left;
+            color: black;
+            font-family: "Bookman Old Style", sans-serif;
+            font-size: 16px;
+            padding: 5px;
+            text-align: justify;
+
+        }
+        .rtx {
+            margin: 30px 20px 10px 10px;
+            border-radius: 6%;
+            float: left;
+            color: black;
+            font-family: "Bookman Old Style", sans-serif;
+            font-size: 16px;
+            padding: 5px;
+            text-align: justify;
+        }
+        .big {
+            font-weight: bold;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            height: min-content;
+        }
+        .hobby {
+            display: flex;
+            flex-direction: column;
+        }
+        .ft {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        @media only screen and (max-device-width: 640px) {
+            .main {
+                display: flex;
+                flex-direction: column;
+                width: 95%;
+                margin: 20px;
+                height: min-content;
+
+            }
+
+            .left_menu {
+                width: 90%;
+                margin: 3%;
+            }
+
+            #LM, #RM {
+                width: 99%;
+                }
+            .txtH, .rtx, .zag {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../css/work.css">
+</head>
+<body>
+<div class="content">
+<header>
+    <h1> My hobby </h1>
+</header>
+    <div class="main">
+<div class="left_menu" id="left_menu">
+    <ul id="ul2">
+        <li> <a id="per1" class="per" href="#last"> Childhood </a> </li>
+        <li> <a id = "per2" class="per" href="#now"> Now </a></li>
+        <li><a id = "per3" href="../index.html" class="lm"> Back to main page </a> </li>
+    </ul>
+</div>
+<div id = "LM">
+    <h2 id="last"> Childhood Hobbies </h2>
+    <div  class="hobby">
+        <p class="zag"> Stamps </p>
+        <div class="ft">
+            <div class="foto" id="foto1"></div>
+        <p class="txtH">
+            Many in childhood collected stamps. I also did not get away from this. My theme was technology - airplanes, cars, steam locomotives, ships.
+            All that moved, puffed, rattled, smoked. But it was not a fanatical hobby. Just went shopping with friends
+            "Philately" and kiosks "Soyuzpechat" and bought stamps with pocket money. It has not grown into something more serious.
+        </p>
+        </div>
+    </div>
+    <div class="hobby">
+    <p class="zag" id="zg1"> Badges </p>
+        <div class="ft">
+        <div class="foto" id="foto2"></div>
+    <p class="txtH">
+        Collecting badges was also in my childhood what attracted probably all children.
+        We exchanged them, searched for shops and kiosks. I remember my sister had a huge collection of badges with
+        images of all medals and orders of the USSR, and in full size. What distinguished them only was that they were badges.
+        Although outwardly almost indistinguishable. How did we envy her.
+    </p>
+        </div>
+        </div>
+    <div class="hobby">
+        <p class="zag"> Sciences </p>
+        <div class="ft">
+        <div class="foto" id="foto3"></div>
+    <p class="txtH">
+        The favorite sciences have always been the exact sciences (mathematics, physics), except chemistry. I never loved chemistry.
+        Still very fond of history. I read a lot of books, both on Russian and foreign history.
+        The love of history has survived to this day. However, like the love of exact sciences.
+        Hence the desire to find time and fully learn programming.
+    </p>
+        </div>
+    </div>
+    <div class="hobby">
+    <p class="zag" id = "zg2"> Sport </p>
+        <div class="ft">
+            <div class="foto" id="foto4"></div>
+    <p class="txtH">
+        Sport is in last place. So it was. I tried various sports - boxing, swimming. Football and hockey - played in the yard like everyone else,
+        but there wasn’t much love for these kinds of sports. I always wanted to play tennis, but when I was a teenager, it was a sport
+        for the elite, and then it was just not up to it. As a result, all sports ended - weights, barbell and other henchmen
+        materials that you can do at home in your free time. Although in childhood he still ran quite well, including skiing.
+    </p>
+
+        </div>
+    </div>
+
+</div>
+<div id = "RM">
+    <div class="hobby">
+        <h2 id = "now"> А что сейчас? </h2>
+        <p class="rtx">
+            All hobbies of childhood have passed. <span class="big">Stamps</span> in stamps albums stacked on mezzanines. There are also boxes with <span class="big">badges</span>.
+            Of the children's hobbies, only <span class="big"> sport </span> in the form of homework on simulators and<span class="big">love of science and history</span>.
+            There was still a hobby for <span class = "big"> photography </span> - even at one time (when it was difficult to buy a good magnifier) ​​I assembled it with my own hands.
+            This mysterious process of developing film and photographs — it was a miracle — when photographs suddenly appeared on empty photographic paper.
+            Now the digitized pictures - a digital camera, a printer for printing photos and everything is ready - that's not it.
+            Therefore, now all hobbies are knowledge and study of the new, especially in those areas in which I work or in related fields.
+            I’m studying all the <span class = "big"> new trends in project management </span> (which is exactly what I’m doing).
+            Now I’m interested in <span class = "big"> Agile methodology, I study both the methods themselves (Scrum, Kanban, Lean and others) and the principles, as well as the techniques of situational leadership and facilitation that accompany them </span>.
+            I evaluate my previous experience in project management, I evaluate how I could solve certain problems using these methods and techniques.
+            It also attracted me because I had previously tried to use certain methods and principles in projects (dividing projects into short stages with the result,
+            building relationships with people according to the situation, focusing the team on the result as the main indicator of work and others) just did not know what it's called. Therefore, it has become a new interest and hobby.
+            The second is <span class = "big"> English </span>, I think also Spanish. I studied English a lot before, but in everyday life I didn’t really need it, and conversational practice was gone. I regret that I did not pay so much attention to the language before.
+            Now this is a new hobby, which I devote my free time to.
+            And programming. I always wanted to learn <span class = "big"> programming </span>. Ever since school, when they studied basic and pascal. But then the routine tightened.
+            And in the last few years I have to manage software development projects and I understand that I lack this knowledge. Therefore, I decided to learn <span class = "big"> Python (as one of the main languages ​​used in working with data),
+                JavaScript (and libraries for it), as well as HTML and CSS </span>. This is also a hobby. Who knows, suddenly this hobby will become the main work, because I like it, and a good basic mathematical preparation allows me to cope with solving various problems. As well as experience in project management.
+            So I share my time - I study new technologies (in terms of artificial intelligence) and project management techniques, programming and foreign languages.
+
+        </p>
+    </div>
+</div>
+    </div>
+</div>
+<div class="foot" > Разработка и дизайн: Роман Полетаев   Москва    2020 год </div>
+</body>
+</html>
